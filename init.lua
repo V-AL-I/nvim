@@ -40,3 +40,6 @@ end)
 
 vim.api.nvim_set_keymap('n', '<leader>f', ':Telescope fd<CR>', { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap('n', '<leader>s', ':vsplit <CR>', { noremap = true, silent = true })
+
+

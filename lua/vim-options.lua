@@ -38,3 +38,20 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 		vim.o.backupext = extension
 	end,
 })
+
+vim.api.nvim_set_keymap('n', '<leader>f', ':Telescope fd<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>s', ':vsplit <CR>', { noremap = true, silent = true })
+
+
+-- Disable arrow keys in normal mode
+vim.api.nvim_set_keymap('n', '<Up>',    '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Down>',  '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Left>',  '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Right>', '<NOP>', { noremap = true, silent = true })
+
+-- Disable arrow keys in visual mode
+vim.api.nvim_set_keymap('v', '<Up>',    '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Down>',  '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Left>',  '<NOP>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<Right>', '<NOP>', { noremap = true, silent = true })
